@@ -15,6 +15,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<a href="/homelogin">DANG NHAP</a>
+<a href="/homeregister?action=add">DANG KY</a>
+
+
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -50,7 +55,7 @@
         <div class="col-3 text-center">
             <h2>Danh Sach lop</h2>
             <c:forEach items="${cls}" var="cl">
-                <h5><a href="">${cl.name}</a></h5>
+                <h5>${cl.name}</h5>
             </c:forEach>
         </div>
         <div class="col-9">
@@ -71,7 +76,7 @@
                         <th scope="row">${st.id}</th>
                         <td>${st.name}</td>
                         <td>${st.age}</td>
-                        <td>@${st.clazz.name}</td>
+                        <td>${st.clazz.name}</td>
                         <td>
                             <button><a href="/students?action=delete&id=${st.id}">DELETE</a></button>
                         </td>

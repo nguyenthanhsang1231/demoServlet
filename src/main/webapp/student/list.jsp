@@ -24,5 +24,4 @@ student
 </c:forEach>
 </body>
 </html>
-</body>
-</html>
+
